@@ -1,0 +1,9 @@
+:root{color-scheme:dark;--bg:#050505;--lime:#b8f24a;box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);overflow:hidden;overscroll-behavior:none}
+canvas{display:block;width:100vw;height:100vh;height:100dvh;object-fit:contain;touch-action:none;outline:none}
+.pad{position:fixed;left:0;right:0;bottom:0;display:none;justify-content:space-between;padding:0 14px calc(14px + env(safe-area-inset-bottom,0px));touch-action:none;pointer-events:none}
+.pad div{display:flex;gap:10px;pointer-events:auto}
+.pad button{width:68px;height:68px;font:700 .9rem system-ui,Arial,sans-serif;background:#0009;color:var(--lime);border:2px solid var(--lime);border-radius:50%;user-select:none;-webkit-user-select:none;touch-action:none}
+.pad button:active{background:var(--lime);color:#000}
+@media (pointer:coarse){.pad{display:flex}}
+:focus-visible{outline:3px solid #ff4d3d;outline-offset:-3px}
